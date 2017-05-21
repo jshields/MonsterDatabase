@@ -1,3 +1,5 @@
+package main.java.com.joshuashields;
+
 import java.util.Scanner;
 /**
  * @author Josh Shields

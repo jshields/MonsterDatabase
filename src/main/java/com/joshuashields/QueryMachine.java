@@ -1,4 +1,4 @@
-package main.java.com.joshuashields;
+package com.joshuashields.monsterdatabase;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

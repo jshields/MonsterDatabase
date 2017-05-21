@@ -1,2 +1,2 @@
-# monster_database
+# Monster Database
 academic Java project

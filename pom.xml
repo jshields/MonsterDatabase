@@ -23,29 +23,4 @@
             <version>3.18.0</version>
         </dependency>
     </dependencies>
-    <build>
-        <plugins>
-            <!-- http://maven.apache.org/plugins/maven-dependency-plugin/index.html -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                  <execution>
-                    <id>copy-dependencies</id>
-                    <phase>compile</phase>
-                    <goals>
-                      <goal>copy-dependencies</goal>
-                    </goals>
-                    <configuration>
-                      <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                      <overWriteReleases>false</overWriteReleases>
-                      <overWriteSnapshots>false</overWriteSnapshots>
-                      <overWriteIfNewer>true</overWriteIfNewer>
-                    </configuration>
-                  </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>

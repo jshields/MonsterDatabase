@@ -27,7 +27,7 @@ public class DatabaseConnection {
             System.exit(0);
         }
         catch (SQLException e) {
-            System.out.println("SQLException.");
+            e.printStackTrace();
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }

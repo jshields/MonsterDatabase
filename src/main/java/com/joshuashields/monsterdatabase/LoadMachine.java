@@ -22,7 +22,7 @@ public class LoadMachine extends DatabaseConnection{
     private Date dateSlain;
 
     //No args constructor to instantiate an instance of this object.
-    public LoadMachine(){
+    public LoadMachine() {
     }
 
     //Method to load rows of properly formatted data from the source .CSV file of monsters into the database table.

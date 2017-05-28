@@ -4,11 +4,11 @@ import java.util.Scanner;
 /**
  * @author Josh Shields
  */
-public class Driver {
+public class Main {
     //This class is to drive the objects and methods of the application when run.
     //It also interfaces with the user.
     private static Scanner in;
-    static private String command;
+    private static String command;
     private static LoadMachine load;
     private static QueryMachine query;
 

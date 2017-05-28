@@ -29,7 +29,7 @@ public class LoadMachine extends DatabaseConnection{
     public void loadCsv() {
         try{
             //Bring the data in from the file. Create a table with SQL to store data if it doesn't already exist.
-            Scanner fromFile = new Scanner(new File("monsters.csv"));
+            Scanner fromFile = new Scanner(new File("src/main/resources/monsters.csv"));
             String sql1 = "create table if not exists SlainMonsters("+
                 "ID integer not null primary key,"+
                 "Name varchar(30),"+
@@ -44,6 +44,8 @@ public class LoadMachine extends DatabaseConnection{
                 //insert each line of data from the file as a row in the database with all of the columns set accordingly.
                 line = fromFile.nextLine();
                 fields = line.split(" ");
+
+                // TODO consider making a Monster class to encapsulate these attributes
                 //id is a primary key and will auto increment
                 name = fields[0].trim();
                 strength = Integer.parseInt(fields[1].trim());

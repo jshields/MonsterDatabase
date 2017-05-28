@@ -18,7 +18,7 @@ public class DatabaseConnection {
         try {
             // Get Database Driver, Database, Connection and Statement objects.
             Class.forName("org.sqlite.JDBC");
-            con = DriverManager.getConnection("jdbc:sqlite:db/monsters.db");
+            con = DriverManager.getConnection("jdbc:sqlite:src/main/resources/db/monsters.db");
             st = con.createStatement();
         }
         //Catch exceptions if they occur.
